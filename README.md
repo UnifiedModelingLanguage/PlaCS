@@ -44,12 +44,18 @@ in linux you may run the command "java -jar PlayerCharacterScrambler.jar" from t
 2) Safety first: run these commands from the terminal 
 (from within the PlayerCharacterScrambler directory)
 
-   $ cd <your path for PlayerCharacterScrambler>
-   $ javac -d compiled/ src/*/*.java
-   $ cd compiled
-   $ jar cvfm ../PlaCS.jar ../src/META-INF/MANIFEST.MF */*.class
-   $ cd ..
-   $ java -jar PlaCS.jar
+   $ cd [your path for PlayerCharacterScrambler] $
+   
+   $ javac -d compiled/ src/*/*.java $
+   
+   $ cd compiled $
+   
+   $ jar cvfm ../PlaCS.jar ../src/META-INF/MANIFEST.MF */*.class $
+   
+   $ cd .. $
+   
+   $ java -jar PlaCS.jar $
+   
 
 Once the jar has been created you can revert back to 1) in order to launch the jar in the future.
 
