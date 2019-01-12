@@ -1,0 +1,6 @@
+cd <your path for PlayerCharacterScrambler>
+javac -d compiled/ src/*/*.java
+cd compiled
+jar cvfm ../PlaCS.jar ../src/META-INF/MANIFEST.MF */*.class
+cd ..
+java -jar PlaCS.jar

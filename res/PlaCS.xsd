@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace = "http://www.PlaCS.PlaCS" xmlns="http://www.PlaCS.PlaCS" elementFormDefault="qualified"> 
+
+<xs:element name="data_r">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="copyrigthdisclaimer" type="xs:string"/>
+            
+            <xs:element name="r" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                        <xs:element name="m" type="xs:string"/>
+                    </xs:sequence>
+                    <xs:attribute name="rid" type="xs:integer"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+    
+    <xs:element name="data_a">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="copyrigthdisclaimer" type="xs:string"/>
+                
+                <xs:element name="a" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                            <xs:element name="m" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="aid" type="xs:integer"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="data_n">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="copyrigthdisclaimer" type="xs:string"/>
+                
+                <xs:element name="n" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                            <xs:element name="m" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="nid" type="xs:integer"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="data_v">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="copyrigthdisclaimer" type="xs:string"/>
+                
+                <xs:element name="v" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                            <xs:element name="m" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="vid" type="xs:integer"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="exc_a">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="copyrigthdisclaimer" type="xs:string"/>
+                
+                <xs:element name="same_adjective" maxOccurs="unbounded" type="AttributeString"/>
+                
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="exc_r">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="copyrigthdisclaimer" type="xs:string"/>
+                
+                <xs:element name="same_adverb" maxOccurs="unbounded" type="AttributeString"/>
+                
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="exc_n">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="copyrigthdisclaimer" type="xs:string"/>
+                
+                <xs:element name="same_noun" maxOccurs="unbounded" type="AttributeString"/>
+                
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="exc_v">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="copyrigthdisclaimer" type="xs:string"/>
+                
+                <xs:element name="same_verb" maxOccurs="unbounded" type="AttributeString"/>
+                
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <xs:element name="index_n">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="copyrigthdisclaimer" type="xs:string"/>
+                
+                <xs:element name="noun" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                            <xs:element name="rel" type="xs:integer"/>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="index_v">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="copyrigthdisclaimer" type="xs:string"/>
+                
+                <xs:element name="verb" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                            <xs:element name="rel" type="xs:integer"/>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="index_r">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="copyrigthdisclaimer" type="xs:string"/>
+                
+                <xs:element name="adverb" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                            <xs:element name="rel" type="xs:integer"/>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="index_a">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="copyrigthdisclaimer" type="xs:string"/>
+                
+                <xs:element name="adjective" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                            <xs:element name="rel" type="xs:integer"/>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="query" type="xs:string"/>
+    
+    <xs:complexType name="AttributeString">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="plural" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:schema>
+
