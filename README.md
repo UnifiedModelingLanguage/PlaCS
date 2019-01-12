@@ -19,7 +19,7 @@ generated passwords (for the most part).
 as their profile picture, thus creating an association, which might be incorrect.
 - Message scrambler: transform your message into a garbled mess, which might or might not be understood 
 properly by your (intended and unintended) audience.
-- One-liner: by keeping clicking on the arrow while the input text field empty, you can generate a 
+- One-liner: by clicking on the arrow while the input text field empty, you can generate a 
 one-liner, the idea being that you should post these one-liners on your social medias once every 
 few hour to obfuscate which of your posts are useful, and which aren't.
 - Completely off-line, completely open-source, competely free: we really shouldn't thrust anything 
